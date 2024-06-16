@@ -1,65 +1,122 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
+    display: flex;
     background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
     color: #FAFAFA;
-	font-size: 55px;
-	font-family: 'Fira Sans', sans-serif;
-    margin: 200px 250px;
+    font-size: 55px;
+    font-family: 'Fira Sans', sans-serif;
+    // margin: 200px 250px;
 }
 
+.container {
+    margin: 200px auto;
+}
 
 .container {
     background-color: #333131;
-	border: 10px solid #a6c0fe;
+    border: 10px solid #a6c0fe;
     border-radius: 15px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     width: 400px;
     align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-container {
+    display: flex;
+    width: 100%;
+}
+
+.left-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 285px;
+}
+
+.right-container {
+    display: flex;
+    flex-flow: column;
+    // width: 100%;
+    width: 95px;
+    height: 400px;
+}
+
+.item-left-container {
+    background: gray;
+    color: #FAFAFA;
+    font-size: 48px;
+    border: 1px solid #a6c0fe;
+    // border-radius: 15px;
+    text-align: center;
+    width: calc(100% / 3);
+    height: 100px;
+    padding: 10px;
+}
+
+.item-right-container {
+    background: gray;
+    color: #FAFAFA;
+    font-size: 48px;
+    border: 1px solid #a6c0fe;
+}
+
+.item-top-container {
+    width: calc(100% / 4);
 }
 
 .item {
-	background: gray;
+    background: gray;
     color: #FAFAFA;
     font-size: 48px;
-	border: 1px solid #a6c0fe ;
+    border: 1px solid #a6c0fe;
     // border-radius: 15px;
-	text-align: center;
-    width: calc(100% / 4);
+    text-align: center;
     height: 100px;
-	padding: 10px;
+    padding: 10px;
     // box-shadow: -3px 3px 7px rgba(0, 0, 0, .6), inset -100px 0px 100px gray;
 }
 
-.item:hover{
+.item:hover {
     background-color: #f68084;
 }
 
-.item:active{
+.item:active {
     background-color: #aa595b;
 }
 
 
 
 
-.display{
+.display {
     width: 100%;
     height: 100px;
     order: -5;
     background: gray;
+    color: #FAFAFA;
+    font-size: 48px;
 }
 
-.item0{
-    width: 100%;
+.item0 {
+    width: calc(100% / 1.5);
 }
 
-// .item-plus{
-//     height: 200px;
-// }
+.item-dot {
+    width: calc(100% / 3);
+    order: 1;
+}
+
+.item-equal {
+    height: 200%;
+}
+
+.item-plus {
+    height: 200%;
+}
 
 // .logo{
 //     order: -4;
@@ -132,9 +189,3 @@ body{
 //     // height: 200px;
 //     order: 12;
 // }
-
-
-
-
-
-
